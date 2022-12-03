@@ -1,0 +1,15 @@
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\bin\Debug\net6.0\Practica TP.exe
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\bin\Debug\net6.0\Practica TP.deps.json
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\bin\Debug\net6.0\Practica TP.runtimeconfig.json
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\bin\Debug\net6.0\Practica TP.dll
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\bin\Debug\net6.0\Practica TP.pdb
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.csproj.AssemblyReference.cache
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.AssemblyInfoInputs.cache
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.AssemblyInfo.cs
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.csproj.CoreCompileInputs.cache
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.dll
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\refint\Practica TP.dll
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.pdb
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\Practica TP.genruntimeconfig.cache
+C:\Users\Melody\Documents\Ing. Biomedica Materias\2022 2do Cuatrimestre\Laboratorio de Programacion II\Practica para TP FINAL\Practica TP\Practica TP\obj\Debug\net6.0\ref\Practica TP.dll
