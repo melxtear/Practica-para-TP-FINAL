@@ -223,7 +223,7 @@ namespace Practica_TP
             //web.BuscarCamino(com1, com3);
             //web.BuscarCamino(com2, com7);
 
-            web.Dijkstra(web, com2);
+            web.Dijkstra(web, com5);
             //Console.WriteLine("C# Graph Example - Updated for latest C# Net Core");
         }
     }
@@ -423,7 +423,7 @@ namespace Practica_TP
             Console.WriteLine(nodo_inicial.data);
             if (nodo_inicial.data.Equals(nodo_final.data))
             {
-                Console.WriteLine("Llegue a destino.");
+                Console.WriteLine("Llegue a destino: " + nodo_inicial.data );
             }
             else
                 foreach (Node<T> vecino in nodo_inicial.Neighbors)
@@ -433,7 +433,7 @@ namespace Practica_TP
                         CaminoAux(vecino, nodo_final, tabla_hash);
                     }
                     else
-                        Console.WriteLine("Nodo visitado: " + vecino.data);
+                        Console.WriteLine("Nodo visitado ahora: " + vecino.data);
 
                 }
 
@@ -453,8 +453,9 @@ namespace Practica_TP
 
             }
             GraphNode<T> auxiliar_cast = (GraphNode<T>)nodo_inicial;
-            Console.WriteLine("Funciona");
-            Console.WriteLine(auxiliar_cast.Costs[i]);
+            Console.WriteLine("Estoy en: " + nodo_inicial.data + " Quiero ir a: " + nodo_destino.data);
+            Console.WriteLine("Obtengo peso de arco: " + auxiliar_cast.Costs[i]);
+            //Console.WriteLine();
             return auxiliar_cast.Costs[i];
         }
 
@@ -483,7 +484,7 @@ namespace Practica_TP
             {
                 Node<T> nodo_u = cola_prioridad.Dequeue();
                 tabla_visitados[nodo_u.data] = true;
-                Console.WriteLine("Desencole: " + nodo_u.data);
+                Console.WriteLine("Desencole el nodo: " + nodo_u.data);
 
                
                 foreach (Node<T> vecino in nodo_u.Neighbors)
@@ -497,13 +498,13 @@ namespace Practica_TP
                         double peso_Arco = get_peso_arco(nodo_u, vecino);
                         if (aux_distancias_vecino > aux_distancias_u+ peso_Arco)
                         {
-                            Console.WriteLine("ok");
+                            Console.WriteLine("Actualizo");
                             tabla_distancias[vecino.data] = aux_distancias_u + peso_Arco;
                             tabla_padre[vecino.data] = nodo_u.data;
                             cola_prioridad.Enqueue(vecino, aux_distancias_u+peso_Arco);
                         }
 
-                        Console.WriteLine("No visite al nodo. ");
+                        //Console.WriteLine("No visite al nodo. ");
                     }
                 }
             }
