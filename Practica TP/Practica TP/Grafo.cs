@@ -42,157 +42,51 @@ namespace Practica_TP
             web.AddDirectedEdge(com1, com2, 4.5);
             web.AddDirectedEdge(com1, com3, 4.9);
             web.AddDirectedEdge(com1, com4, 7);
-            web.AddDirectedEdge(com1, com5, 8.7);
-            web.AddDirectedEdge(com1, com6, 10.5);
-            web.AddDirectedEdge(com1, com7, 10.6);
-            web.AddDirectedEdge(com1, com8, 16.8);
-            web.AddDirectedEdge(com1, com9, 17.4);
-            web.AddDirectedEdge(com1, com10, 17.4);
-            web.AddDirectedEdge(com1, com11, 23.6);
-            web.AddDirectedEdge(com1, com12, 19.1);
-            web.AddDirectedEdge(com1, com13, 12.5);
-            web.AddDirectedEdge(com1, com14, 8.6);
-            web.AddDirectedEdge(com1, com15, 10.4);
-            web.AddDirectedEdge(com1, avellaneda, 8.6);
-            web.AddDirectedEdge(com1, lanus, 4.5);
-            web.AddDirectedEdge(com1, lomas_de_zamora, 4.9);
-            web.AddDirectedEdge(com1, la_matanza, 7);
-            web.AddDirectedEdge(com1, moron, 8.7);
-            web.AddDirectedEdge(com1, tres_de_febrero, 10.5);
-            web.AddDirectedEdge(com1, san_martin, 10.6);
-            web.AddDirectedEdge(com1, vicente_lopez, 16.8);
-            web.AddDirectedEdge(com1, san_isidro, 17.4);
+           
 
 
-            //comuna 2 a otras comunas/partidos
+            //comuna 2 vecina con las siguientes comunas/partidos
             web.AddDirectedEdge(com2, com1, 6.3);
             web.AddDirectedEdge(com2, com3, 3.9);
-            web.AddDirectedEdge(com2, com4, 9.2);
             web.AddDirectedEdge(com2, com5, 4.6);
-            web.AddDirectedEdge(com2, com6, 6.8);
-            web.AddDirectedEdge(com2, com7, 9.9);
-            web.AddDirectedEdge(com2, com8, 18.9);
-            web.AddDirectedEdge(com2, com9, 19.6);
-            web.AddDirectedEdge(com2, com10, 12);
-            web.AddDirectedEdge(com2, com11, 22.6);
-            web.AddDirectedEdge(com2, com12, 16.3);
-            web.AddDirectedEdge(com2, com13, 7.8);
             web.AddDirectedEdge(com2, com14, 3.6);
-            web.AddDirectedEdge(com2, com15, 7.1);
-            web.AddDirectedEdge(com2, avellaneda, 8.6);
-            web.AddDirectedEdge(com2, lanus, 4.5);
-            web.AddDirectedEdge(com2, lomas_de_zamora, 4.9);
-            web.AddDirectedEdge(com2, la_matanza, 7);
-            web.AddDirectedEdge(com2, moron, 8.7);
-            web.AddDirectedEdge(com2, tres_de_febrero, 10.5);
-            web.AddDirectedEdge(com2, san_martin, 10.6);
-            web.AddDirectedEdge(com2, vicente_lopez, 16.8);
-            web.AddDirectedEdge(com2, san_isidro, 17.4);
+            
 
             //comuna 3
             web.AddDirectedEdge(com3, com1, 3.9);
             web.AddDirectedEdge(com3, com2, 4.3);
             web.AddDirectedEdge(com3, com4, 4.9);
             web.AddDirectedEdge(com3, com5, 2.9);
-            web.AddDirectedEdge(com3, com6, 4.8);
-            web.AddDirectedEdge(com3, com7, 6.3);
-            web.AddDirectedEdge(com3, com8, 12.6);
-            web.AddDirectedEdge(com3, com9, 13.2);
-            web.AddDirectedEdge(com3, com10, 13.3);
-            web.AddDirectedEdge(com3, com11, 19.4);
-            web.AddDirectedEdge(com3, com12, 24.3);
-            web.AddDirectedEdge(com3, com13, 13.6);
-            web.AddDirectedEdge(com3, com14, 8);
-            web.AddDirectedEdge(com3, com15, 7.9);
-            web.AddDirectedEdge(com3, avellaneda, 7.3);
-            web.AddDirectedEdge(com3, lanus, 12.7);
-            web.AddDirectedEdge(com3, lomas_de_zamora, 23.8);
-            web.AddDirectedEdge(com3, la_matanza, 19.8);
-            web.AddDirectedEdge(com3, moron, 26);
-            web.AddDirectedEdge(com3, tres_de_febrero, 18);
-            web.AddDirectedEdge(com3, san_martin, 23);
-            web.AddDirectedEdge(com3, vicente_lopez, 16.7);
-            web.AddDirectedEdge(com3, san_isidro, 31.2);
+          
 
             //comuna 4
             web.AddDirectedEdge(com4, com1, 6.4);
-            web.AddDirectedEdge(com4, com2, 6.6);
             web.AddDirectedEdge(com4, com3, 3.8);
             web.AddDirectedEdge(com4, com5, 6.3);
-            web.AddDirectedEdge(com4, com6, 8.2);
             web.AddDirectedEdge(com4, com7, 7.5);
             web.AddDirectedEdge(com4, com8, 8.3);
-            web.AddDirectedEdge(com4, com9, 15.1);
-            web.AddDirectedEdge(com4, com10, 15.2);
-            web.AddDirectedEdge(com4, com11, 21.3);
-            web.AddDirectedEdge(com4, com12, 26.2);
-            web.AddDirectedEdge(com4, com13, 15.9);
-            web.AddDirectedEdge(com4, com14, 10.3);
-            web.AddDirectedEdge(com4, com15, 11.3);
-            web.AddDirectedEdge(com4, avellaneda, 4.3);
-            web.AddDirectedEdge(com4, lanus, 8);
-            web.AddDirectedEdge(com4, lomas_de_zamora, 18.7);
-            web.AddDirectedEdge(com4, la_matanza, 27.1);
-            web.AddDirectedEdge(com4, moron, 27.9);
-            web.AddDirectedEdge(com4, tres_de_febrero, 19.9);
-            web.AddDirectedEdge(com4, san_martin, 24.9);
-            web.AddDirectedEdge(com4, vicente_lopez, 19.4);
-            web.AddDirectedEdge(com4, san_isidro, 33.6);
+            
 
-            //
-            web.AddDirectedEdge(com5, com1, 5.4);
+            // comuna 5
             web.AddDirectedEdge(com5, com2, 5.8);
             web.AddDirectedEdge(com5, com3, 2.6);
             web.AddDirectedEdge(com5, com4, 6.1);
             web.AddDirectedEdge(com5, com6, 3.2);
             web.AddDirectedEdge(com5, com7, 4.8);
-            web.AddDirectedEdge(com5, com8, 11.3);
-            web.AddDirectedEdge(com5, com9, 11.9);
-            web.AddDirectedEdge(com5, com10, 11.9);
-            web.AddDirectedEdge(com5, com11, 21.3);
-            web.AddDirectedEdge(com5, com12, 18.1);
-            web.AddDirectedEdge(com5, com13, 20.4);
             web.AddDirectedEdge(com5, com14, 10);
             web.AddDirectedEdge(com5, com15, 5.6);
-            web.AddDirectedEdge(com5, avellaneda, 9.5);
-            web.AddDirectedEdge(com5, lanus, 11);
-            web.AddDirectedEdge(com5, lomas_de_zamora, 22.4);
-            web.AddDirectedEdge(com5, la_matanza, 20.6);
-            web.AddDirectedEdge(com5, moron, 24.7);
-            web.AddDirectedEdge(com5, tres_de_febrero, 16.7);
-            web.AddDirectedEdge(com5, san_martin, 21.6);
-            web.AddDirectedEdge(com5, vicente_lopez, 18.5);
-            web.AddDirectedEdge(com5, san_isidro, 32.6);
+            
 
-            //
-            web.AddDirectedEdge(com6, com1, 8.3);
-            web.AddDirectedEdge(com6, com2, 8.7);
-            web.AddDirectedEdge(com6, com3, 5.4);
-            web.AddDirectedEdge(com6, com4, 8.7);
+            // comuna 6
+           
             web.AddDirectedEdge(com6, com5, 2.9);
             web.AddDirectedEdge(com6, com7, 3);
-            web.AddDirectedEdge(com6, com8, 8.7);
-            web.AddDirectedEdge(com6, com9, 9.3);
-            web.AddDirectedEdge(com6, com10, 6.8);
             web.AddDirectedEdge(com6, com11, 8.8);
-            web.AddDirectedEdge(com6, com12, 9.6);
-            web.AddDirectedEdge(com6, com13, 10.2);
-            web.AddDirectedEdge(com6, com14, 7.7);
             web.AddDirectedEdge(com6, com15, 4.4);
-            web.AddDirectedEdge(com6, avellaneda, 12.2);
-            web.AddDirectedEdge(com6, lanus, 14.4);
-            web.AddDirectedEdge(com6, lomas_de_zamora, 19.8);
-            web.AddDirectedEdge(com6, la_matanza, 15.9);
-            web.AddDirectedEdge(com6, moron, 22.1);
-            web.AddDirectedEdge(com6, tres_de_febrero, 14.1);
-            web.AddDirectedEdge(com6, san_martin, 19);
-            web.AddDirectedEdge(com6, vicente_lopez, 25.2);
-            web.AddDirectedEdge(com6, san_isidro, 34.6);
+          
 
-            //
-            web.AddDirectedEdge(com7, com1, 15.3);
-            web.AddDirectedEdge(com7, com2, 10.5);
-            web.AddDirectedEdge(com7, com3, 6.3);
+            // comuna 7
+           
             web.AddDirectedEdge(com7, com4, 7.6);
             web.AddDirectedEdge(com7, com5, 5.3);
             web.AddDirectedEdge(com7, com6, 3.2);
@@ -200,214 +94,70 @@ namespace Practica_TP
             web.AddDirectedEdge(com7, com9, 7.8);
             web.AddDirectedEdge(com7, com10, 7.8);
             web.AddDirectedEdge(com7, com11, 14);
-            web.AddDirectedEdge(com7, com12, 18.9);
-            web.AddDirectedEdge(com7, com13, 26);
-            web.AddDirectedEdge(com7, com14, 10);
-            web.AddDirectedEdge(com7, com15, 6.7);
-            web.AddDirectedEdge(com7, avellaneda, 17.1);
-            web.AddDirectedEdge(com7, lanus, 12.9);
-            web.AddDirectedEdge(com7, lomas_de_zamora, 19.3);
-            web.AddDirectedEdge(com7, la_matanza, 16.5);
-            web.AddDirectedEdge(com7, moron, 20.6);
-            web.AddDirectedEdge(com7, tres_de_febrero, 12.6);
-            web.AddDirectedEdge(com7, san_martin, 17.5);
-            web.AddDirectedEdge(com7, vicente_lopez, 23.7);
-            web.AddDirectedEdge(com7, san_isidro, 33.1);
-
-            web.AddDirectedEdge(com8, com1, 18.1);
-            web.AddDirectedEdge(com8, com2, 18.5);
-            web.AddDirectedEdge(com8, com3, 10.3);
+           
+            //comuna 8
+          
             web.AddDirectedEdge(com8, com4, 8.6);
-            web.AddDirectedEdge(com8, com5, 9.6);
-            web.AddDirectedEdge(com8, com6, 8.5);
             web.AddDirectedEdge(com8, com7, 6.1);
             web.AddDirectedEdge(com8, com9, 8.6);
-            web.AddDirectedEdge(com8, com10, 11.5);
-            web.AddDirectedEdge(com8, com11, 17.7);
-            web.AddDirectedEdge(com8, com12, 22.6);
-            web.AddDirectedEdge(com8, com13, 29.6);
-            web.AddDirectedEdge(com8, com14, 22.1);
-            web.AddDirectedEdge(com8, com15, 12.9);
-            web.AddDirectedEdge(com8, avellaneda, 12.1);
-            web.AddDirectedEdge(com8, lanus, 7.9);
-            web.AddDirectedEdge(com8, lomas_de_zamora, 14.4);
-            web.AddDirectedEdge(com8, la_matanza, 15);
-            web.AddDirectedEdge(com8, moron, 24.2);
-            web.AddDirectedEdge(com8, tres_de_febrero, 16.2);
-            web.AddDirectedEdge(com8, san_martin, 21.2);
-            web.AddDirectedEdge(com8, vicente_lopez, 27.3);
-            web.AddDirectedEdge(com8, san_isidro, 36.8);
+           
 
-            web.AddDirectedEdge(com9, com1, 16.5);
-            web.AddDirectedEdge(com9, com2, 16.8);
-            web.AddDirectedEdge(com9, com3, 12.7);
-            web.AddDirectedEdge(com9, com4, 16.7);
-            web.AddDirectedEdge(com9, com5, 11.6);
-            web.AddDirectedEdge(com9, com6, 7.9);
+            //comuna 9
+
             web.AddDirectedEdge(com9, com7, 7.9);
             web.AddDirectedEdge(com9, com8, 8.7);
             web.AddDirectedEdge(com9, com10, 4.9);
-            web.AddDirectedEdge(com9, com11, 7.5);
-            web.AddDirectedEdge(com9, com12, 14.9);
-            web.AddDirectedEdge(com9, com13, 22);
-            web.AddDirectedEdge(com9, com14, 13.8);
-            web.AddDirectedEdge(com9, com15, 10.5);
-            web.AddDirectedEdge(com9, avellaneda, 18.3);
-            web.AddDirectedEdge(com9, lanus, 14.4);
-            web.AddDirectedEdge(com9, lomas_de_zamora, 15.7);
-            web.AddDirectedEdge(com9, la_matanza, 6.3);
-            web.AddDirectedEdge(com9, moron, 16.6);
-            web.AddDirectedEdge(com9, tres_de_febrero, 8.6);
-            web.AddDirectedEdge(com9, san_martin, 13.6);
-            web.AddDirectedEdge(com9, vicente_lopez, 19.7);
-            web.AddDirectedEdge(com9, san_isidro, 29.2);
+            
 
-            web.AddDirectedEdge(com10, com1, 17.2);
-            web.AddDirectedEdge(com10, com2, 17.6);
-            web.AddDirectedEdge(com10, com3, 13.5);
-            web.AddDirectedEdge(com10, com4, 17.4);
-            web.AddDirectedEdge(com10, com5, 12.3);
-            web.AddDirectedEdge(com10, com6, 6.5);
-            web.AddDirectedEdge(com10, com8, 8.7);
+            //comuna 10
+       
+            web.AddDirectedEdge(com10, com7, 8.7);
             web.AddDirectedEdge(com10, com9, 9.4);
-            web.AddDirectedEdge(com10, com10, 4.7);
             web.AddDirectedEdge(com10, com11, 2.7);
-            web.AddDirectedEdge(com10, com12, 11.3);
-            web.AddDirectedEdge(com10, com13, 18.8);
-            web.AddDirectedEdge(com10, com14, 10.4);
-            web.AddDirectedEdge(com10, com15, 6.6);
-            web.AddDirectedEdge(com10, avellaneda, 19);
-            web.AddDirectedEdge(com10, lanus, 15.1);
-            web.AddDirectedEdge(com10, lomas_de_zamora, 21.6);
-            web.AddDirectedEdge(com10, la_matanza, 7.7);
-            web.AddDirectedEdge(com10, moron, 16);
-            web.AddDirectedEdge(com10, tres_de_febrero, 5.4);
-            web.AddDirectedEdge(com10, san_martin, 10);
-            web.AddDirectedEdge(com10, vicente_lopez, 16.5);
-            web.AddDirectedEdge(com10, san_isidro, 25.9);
+            
 
-            web.AddDirectedEdge(com11, com1, 23);
-            web.AddDirectedEdge(com11, com2, 21.9);
-            web.AddDirectedEdge(com11, com3, 16);
-            web.AddDirectedEdge(com11, com4, 23.2);
-            web.AddDirectedEdge(com11, com5, 10.7);
+            //comuna 11
+
             web.AddDirectedEdge(com11, com6, 8.7);
             web.AddDirectedEdge(com11, com7, 9.1);
-            web.AddDirectedEdge(com11, com8, 11.9);
-            web.AddDirectedEdge(com11, com9, 7.2);
             web.AddDirectedEdge(com11, com10, 3);
             web.AddDirectedEdge(com11, com12, 8.7);
-            web.AddDirectedEdge(com11, com13, 14.7);
-            web.AddDirectedEdge(com11, com14, 18.7);
             web.AddDirectedEdge(com11, com15, 7.9);
-            web.AddDirectedEdge(com11, avellaneda, 24.8);
-            web.AddDirectedEdge(com11, lanus, 10.8);
-            web.AddDirectedEdge(com11, lomas_de_zamora, 22.6);
-            web.AddDirectedEdge(com11, la_matanza, 8.5);
-            web.AddDirectedEdge(com11, moron, 15.6);
-            web.AddDirectedEdge(com11, tres_de_febrero, 3.4);
-            web.AddDirectedEdge(com11, san_martin, 6.2);
-            web.AddDirectedEdge(com11, vicente_lopez, 12.4);
-            web.AddDirectedEdge(com11, san_isidro, 21.8);
+            
 
-            web.AddDirectedEdge(com12, com1, 20.4);
-            web.AddDirectedEdge(com12, com2, 15.9);
-            web.AddDirectedEdge(com12, com3, 20.8);
-            web.AddDirectedEdge(com12, com4, 22.8);
-            web.AddDirectedEdge(com12, com5, 10.4);
-            web.AddDirectedEdge(com12, com6, 9.4);
-            web.AddDirectedEdge(com12, com7, 10.9);
-            web.AddDirectedEdge(com12, com8, 22.8);
-            web.AddDirectedEdge(com12, com9, 17.7);
-            web.AddDirectedEdge(com12, com10, 13.6);
+            //comuna 12
+            
             web.AddDirectedEdge(com12, com11, 10.5);
             web.AddDirectedEdge(com12, com13, 3.9);
-            web.AddDirectedEdge(com12, com14, 14.7);
             web.AddDirectedEdge(com12, com15, 6.3);
-            web.AddDirectedEdge(com12, avellaneda, 24.4);
-            web.AddDirectedEdge(com12, lanus, 28.5);
-            web.AddDirectedEdge(com12, lomas_de_zamora, 30.3);
-            web.AddDirectedEdge(com12, la_matanza, 17.2);
-            web.AddDirectedEdge(com12, moron, 23.2);
-            web.AddDirectedEdge(com12, tres_de_febrero, 11.6);
-            web.AddDirectedEdge(com12, san_martin, 5.8);
-            web.AddDirectedEdge(com12, vicente_lopez, 6.4);
-            web.AddDirectedEdge(com12, san_isidro, 15.8);
           
-            //
-            web.AddDirectedEdge(com13, com1, 15);
-            web.AddDirectedEdge(com13, com2, 8);
-            web.AddDirectedEdge(com13, com3, 15.4);
-            web.AddDirectedEdge(com13, com4, 17.4);
-            web.AddDirectedEdge(com13, com5, 9.8);
-            web.AddDirectedEdge(com13, com6, 9.8);
-            web.AddDirectedEdge(com13, com7, 26.5);
-            web.AddDirectedEdge(com13, com8, 27.2);
-            web.AddDirectedEdge(com13, com9, 22.1);
-            web.AddDirectedEdge(com13, com10, 19);
-            web.AddDirectedEdge(com13, com11, 14.9);
+          
+            //comuna 13
+           
             web.AddDirectedEdge(com13, com12, 4.5);
             web.AddDirectedEdge(com13, com14, 4.6);
             web.AddDirectedEdge(com13, com15, 6);
-            web.AddDirectedEdge(com13, avellaneda, 19);
-            web.AddDirectedEdge(com13, lanus, 24.4);
-            web.AddDirectedEdge(com13, lomas_de_zamora, 34.7);
-            web.AddDirectedEdge(com13, la_matanza, 21.4);
-            web.AddDirectedEdge(com13, moron, 27.6);
-            web.AddDirectedEdge(com13, tres_de_febrero, 16);
-            web.AddDirectedEdge(com13, san_martin, 13.1);
-            web.AddDirectedEdge(com13, vicente_lopez, 4.8);
-            web.AddDirectedEdge(com13, san_isidro, 18.9);
+           
 
-            //
-            web.AddDirectedEdge(com14, com1, 8.7);
+            //comuna 14
+          
             web.AddDirectedEdge(com14, com2, 4.1);
-            web.AddDirectedEdge(com14, com3, 9.5);
-            web.AddDirectedEdge(com14, com4, 13.6);
             web.AddDirectedEdge(com14, com5, 5.4);
-            web.AddDirectedEdge(com14, com6, 7.1);
-            web.AddDirectedEdge(com14, com7, 10.1);
-            web.AddDirectedEdge(com14, com8, 23.4);
-            web.AddDirectedEdge(com14, com9, 13.6);
-            web.AddDirectedEdge(com14, com10, 10.4);
-            web.AddDirectedEdge(com14, com11, 19);
-            web.AddDirectedEdge(com14, com12, 13.1);
             web.AddDirectedEdge(com14, com13, 5.1);
             web.AddDirectedEdge(com14, com15, 4.8);
-            web.AddDirectedEdge(com14, avellaneda, 15.2);
-            web.AddDirectedEdge(com14, lanus, 20.6);
-            web.AddDirectedEdge(com14, lomas_de_zamora, 34.5);
-            web.AddDirectedEdge(com14, la_matanza, 25.5);
-            web.AddDirectedEdge(com14, moron, 31.7);
-            web.AddDirectedEdge(com14, tres_de_febrero, 20);
-            web.AddDirectedEdge(com14, san_martin, 17.2);
-            web.AddDirectedEdge(com14, vicente_lopez, 8.9);
-            web.AddDirectedEdge(com14, san_isidro, 23);
 
-            web.AddDirectedEdge(com15, com1, 11);
-            web.AddDirectedEdge(com15, com2, 9);
-            web.AddDirectedEdge(com15, com3, 8.1);
-            web.AddDirectedEdge(com15, com4, 11.5);
+
+            //comuna 15
+
             web.AddDirectedEdge(com15, com5, 5.6);
             web.AddDirectedEdge(com15, com6, 4.4);
-            web.AddDirectedEdge(com15, com7, 7.6);
-            web.AddDirectedEdge(com15, com8, 12.7);
-            web.AddDirectedEdge(com15, com9, 10.8);
-            web.AddDirectedEdge(com15, com10, 7.1);
             web.AddDirectedEdge(com15, com11, 7.1);
             web.AddDirectedEdge(com15, com12, 6.9);
             web.AddDirectedEdge(com15, com13, 6.2);
             web.AddDirectedEdge(com15, com14, 5);
-            web.AddDirectedEdge(com15, avellaneda, 15.1);
-            web.AddDirectedEdge(com15, lanus, 18.4);
-            web.AddDirectedEdge(com15, lomas_de_zamora, 24.9);
-            web.AddDirectedEdge(com15, la_matanza, 17);
-            web.AddDirectedEdge(com15, moron, 23.2);
-            web.AddDirectedEdge(com15, tres_de_febrero, 11.5);
-            web.AddDirectedEdge(com15, san_martin, 9.1);
-            web.AddDirectedEdge(com15, vicente_lopez, 10.2);
-            web.AddDirectedEdge(com15, san_isidro, 21.1);
 
+
+            //avellaneda
             web.AddDirectedEdge(avellaneda, com1, 7.4);
             web.AddDirectedEdge(avellaneda, com2, 9.8);
             web.AddDirectedEdge(avellaneda, com3, 7.4);
@@ -630,7 +380,7 @@ namespace Practica_TP
 
            
             //Console.WriteLine(com1.valor);
-            //web.BuscarCamino(com1, com3);
+            web.BuscarCamino(com1, com3);
             //web.BuscarCamino(com2, com7);
 
             web.Dijkstra(web, com2);

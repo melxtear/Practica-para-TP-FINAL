@@ -8,23 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Melody\\.nuget\\packages\\": {},
+    "C:\\Users\\laraf\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Melody\\Documents\\Ing. Biomedica Materias\\2022 2do Cuatrimestre\\Laboratorio de Programacion II\\Practica para TP FINAL\\Practica TP\\Practica TP\\Practica TP.csproj",
+      "projectUniqueName": "C:\\Users\\laraf\\Source\\Repos\\Practica-para-TP-FINAL\\Practica TP\\Practica TP\\Practica TP.csproj",
       "projectName": "Practica TP",
-      "projectPath": "C:\\Users\\Melody\\Documents\\Ing. Biomedica Materias\\2022 2do Cuatrimestre\\Laboratorio de Programacion II\\Practica para TP FINAL\\Practica TP\\Practica TP\\Practica TP.csproj",
-      "packagesPath": "C:\\Users\\Melody\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Melody\\Documents\\Ing. Biomedica Materias\\2022 2do Cuatrimestre\\Laboratorio de Programacion II\\Practica para TP FINAL\\Practica TP\\Practica TP\\obj\\",
+      "projectPath": "C:\\Users\\laraf\\Source\\Repos\\Practica-para-TP-FINAL\\Practica TP\\Practica TP\\Practica TP.csproj",
+      "packagesPath": "C:\\Users\\laraf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\laraf\\Source\\Repos\\Practica-para-TP-FINAL\\Practica TP\\Practica TP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Melody\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\laraf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
