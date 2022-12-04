@@ -380,7 +380,7 @@ namespace Practica_TP
 
            
             //Console.WriteLine(com1.valor);
-            web.BuscarCamino(com1, com3);
+            //web.BuscarCamino(com1, com3);
             //web.BuscarCamino(com2, com7);
 
             web.Dijkstra(web, com2);
