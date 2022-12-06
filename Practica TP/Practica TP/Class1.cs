@@ -5,7 +5,118 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+namespace Practica_TP
+{
+    public class practica
+    {
+        public class Item
+        {
+            public int Weight { get; set; }
+            public int Value { get; set; }
+        }
+        public static List<Pedido> KnapSack(Pedido[] items, int capacity)
+        {
+            int[,] matrix = new int[items.Length + 1, capacity + 1];
+            List<Pedido>[,] matrix2 = new List<Pedido>[items.Length + 1, capacity + 1];
+            for (int i = 0; i < items.Length + 1; i++)
+            {
+                for (int j = 0; j < capacity + 1; j++)
+                    matrix2[i, j] = new List<Pedido>();
+            }
 
+            for (int itemIndex = 0; itemIndex <= items.Length; itemIndex++)
+            {
+                // This adjusts the itemIndex to be 1 based instead of 0 based
+                // and in this case 0 is the initial state before an item is
+                // considered for the knapsack.
+                var currentItem = itemIndex == 0 ? null : items[itemIndex - 1];
+                for (int currentCapacity = 0; currentCapacity <= capacity; currentCapacity++)
+                {
+                    // Set the first row and column of the matrix to all zeros
+                    // This is the state before any items are added and when the
+                    // potential capacity is zero the value would also be zero.
+                    if (currentItem == null || currentCapacity == 0)
+                    {
+                        matrix[itemIndex, currentCapacity] = 0;
+                    }
+                    // If the current items weight is less than the current capacity
+                    // then we should see if adding this item to the knapsack 
+                    // results in a greater value than what was determined for
+                    // the previous item at this potential capacity.
+                    else if (currentItem.peso <= currentCapacity)
+                    {
+                        int a = currentItem.volumen
+                                + matrix[itemIndex - 1, currentCapacity - currentItem.peso];
+                        int b = matrix[itemIndex - 1, currentCapacity];
+                        if (a > b)
+                        {
+                            matrix2[itemIndex, currentCapacity] = matrix2[itemIndex - 1, currentCapacity - currentItem.peso].ToList();
+                            matrix2[itemIndex, currentCapacity].Add(currentItem);
+
+
+
+                        }
+                        else
+                            matrix2[itemIndex, currentCapacity] = matrix2[itemIndex - 1, currentCapacity];
+
+                        matrix[itemIndex, currentCapacity] = Math.Max(
+                            currentItem.volumen
+                                + matrix[itemIndex - 1, currentCapacity - currentItem.peso],
+                            matrix[itemIndex - 1, currentCapacity]);
+
+                    }
+                    // current item will not fit so just set the value to the 
+                    // what it was after handling the previous item.
+                    else
+                    {
+                        matrix[itemIndex, currentCapacity] =
+                            matrix[itemIndex - 1, currentCapacity];
+                        matrix2[itemIndex, currentCapacity] = matrix2[itemIndex - 1, currentCapacity];
+                    }
+                }
+            }
+
+            // The solution should be the value determined after considering all
+            // items at all the intermediate potential capacities.
+            Console.WriteLine(matrix[items.Length, capacity]);
+            Console.WriteLine(matrix2[items.Length, capacity].Count);
+
+            return matrix2[items.Length, capacity];
+        }
+
+        public static void Main()
+        {/*
+            var items = new[]
+            {
+                new Item {Value = 60, Weight = 10},
+                new Item {Value = 100, Weight = 20},
+                new Item {Value = 120, Weight = 30},
+             };
+
+
+            List<Item> aux = KnapSack(items, 60);
+            for (int i = 0; i < aux.Count; i++)
+            {
+                Console.WriteLine(aux[i].Value);
+            }
+
+
+            Console.WriteLine(aux);*/
+            
+            var csv_ = new csvfiles._csv();
+            List<Pedido> Pedidos_ = csv_.read_csv();
+
+            foreach (Pedido pedido in Pedidos_)
+            {
+                pedido.volumen = pedido.largo * pedido.alto * pedido.ancho;
+            }
+
+            KnapSack(Pedidos_.ToArray(), 5000);
+        }
+    }
+}
+
+/*
 namespace Practica_TP
 {
     public class Pedido
@@ -21,9 +132,10 @@ namespace Practica_TP
 
         public int volumen { get; set; }
         //public string? barrio { get; set; }
-        
-      //public DateTime fecha { get; set; }
+
+        //public DateTime fecha { get; set; }
     }
+
     public class practica
     {
         public class Item
@@ -31,22 +143,23 @@ namespace Practica_TP
             public int Weight { get; set; }
             public int Value { get; set; }
         }
-        public static List<Pedido> KnapSack(Pedido[] pedidos, int capacity)
+
+        public static List<Pedido> KnapSack(Pedido[] items, int capacity)
         {
-            int[,] matrix = new int[pedidos.Length + 1, capacity + 1];
-            List<Pedido>[,] matrix2 = new List<Pedido>[pedidos.Length + 1, capacity + 1];
-            for (int i = 0; i < pedidos.Length + 1; i++)
+            int[,] matrix = new int[items.Length + 1, capacity + 1];
+            List<Pedido>[,] matrix2 = new List<Pedido>[items.Length + 1, capacity + 1];
+            for (int i = 0; i < items.Length + 1; i++)
             {
                 for (int j = 0; j < capacity + 1; j++)
                     matrix2[i, j] = new List<Pedido>();
             }
 
-            for (int itemIndex = 0; itemIndex <= pedidos.Length; itemIndex++)
+            for (int itemIndex = 0; itemIndex <= items.Length; itemIndex++)
             {
                 // This adjusts the itemIndex to be 1 based instead of 0 based
                 // and in this case 0 is the initial state before an item is
                 // considered for the knapsack.
-                var currentItem = itemIndex == 0 ? null : pedidos[itemIndex - 1];
+                var currentItem = itemIndex == 0 ? null : items[itemIndex - 1];
                 for (int currentCapacity = 0; currentCapacity <= capacity; currentCapacity++)
                 {
                     // Set the first row and column of the matrix to all zeros
@@ -60,18 +173,18 @@ namespace Practica_TP
                     // then we should see if adding this item to the knapsack 
                     // results in a greater value than what was determined for
                     // the previous item at this potential capacity.
-                    else if (currentItem.volumen <= currentCapacity)
+                    else if (currentItem.peso <= currentCapacity)
                     {
-                        int a = currentItem.peso
-                                + matrix[itemIndex - 1, currentCapacity - currentItem.volumen];
+                        int a = currentItem.volumen
+                                + matrix[itemIndex - 1, currentCapacity - currentItem.peso];
                         int b = matrix[itemIndex - 1, currentCapacity];
                         matrix2[itemIndex, currentCapacity] = matrix2[itemIndex - 1, currentCapacity].ToList();
                         if (a > b)
                             matrix2[itemIndex, currentCapacity].Add(currentItem);
 
                         matrix[itemIndex, currentCapacity] = Math.Max(
-                            currentItem.peso
-                                + matrix[itemIndex - 1, currentCapacity - currentItem.volumen],
+                            currentItem.volumen
+                                + matrix[itemIndex - 1, currentCapacity - currentItem.peso],
                             matrix[itemIndex - 1, currentCapacity]);
 
                     }
@@ -87,20 +200,21 @@ namespace Practica_TP
 
             // The solution should be the value determined after considering all
             // items at all the intermediate potential capacities.
-            Console.WriteLine(matrix2[pedidos.Length, capacity].Count);
-            return matrix2[pedidos.Length, capacity];
+            Console.WriteLine(matrix2[items.Length, capacity].Count);
+            return matrix2[items.Length, capacity];
         }
-        public static void Main2()
+
+        public static void Main()
         {
             var items = new[]
             {
                 new Item {Value = 60, Weight = 10},
                 new Item {Value = 100, Weight = 20},
                 new Item {Value = 120, Weight = 30},
-             };
+         };
             //public class Pedido
             //{
-          //  public string? producto { get; set; }
+            //  public string? producto { get; set; }
             //public float precio { get; set; }
             //public float largo { get; set; }
             //public float ancho { get; set; }
@@ -108,8 +222,8 @@ namespace Practica_TP
             //public string? prioridad { get; set; }
             //public string? barrio { get; set; }
             //public DateTime fecha { get; set; }
-        //}
-        var pedidos_ = new[]
+            //}
+            var pedidos_ = new[]
             {
                 new Pedido { producto="monitor", precio=18349, largo=81, ancho=99, alto=58, peso=174, prioridad="diferido"},
                 new Pedido { producto="monitor2", precio=1839, largo=70, ancho=109, alto=68, peso=118, prioridad="diferido"},
@@ -117,17 +231,19 @@ namespace Practica_TP
                 new Pedido { producto="monitor4", precio=834, largo=11, ancho=29, alto=38, peso=278, prioridad="express"},
             };
 
-            foreach(Pedido pedido in pedidos_)
+            foreach (Pedido pedido in pedidos_)
             {
                 pedido.volumen = pedido.largo * pedido.alto * pedido.ancho;
             }
-      
 
-            List<Pedido> aux = KnapSack(pedidos_, 70000);
+            int aux2 = 0;
+            List<Pedido> aux = KnapSack(pedidos_, 280);
             for (int i = 0; i < aux.Count; i++)
             {
+                aux2 = aux2 + aux[i].peso;
                 Console.WriteLine(aux[i].peso);
             }
+            Console.WriteLine("El peso total es: " + aux2);
 
             ///castear
             int[] Volumenes = new int[aux.Count + 1];
@@ -148,10 +264,15 @@ namespace Practica_TP
 
 
             }
-            Console.WriteLine("hola");
+            //Console.WriteLine("hola");
+
+
         }
     }
+
+    
 }
+*/
 /*
 namespace Practica_TP
 {

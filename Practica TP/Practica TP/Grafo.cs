@@ -9,7 +9,7 @@ namespace Practica_TP
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main2(string[] args)
         {
             Graph<string> web = new Graph<string>();
             var com1 = web.AddNode("comuna 1");
@@ -223,7 +223,7 @@ namespace Practica_TP
             //web.BuscarCamino(com1, com3);
             //web.BuscarCamino(com2, com7);
 
-            web.Dijkstra(web, com5);
+            web.Dijkstra(web, com4);
             //Console.WriteLine("C# Graph Example - Updated for latest C# Net Core");
         }
     }
